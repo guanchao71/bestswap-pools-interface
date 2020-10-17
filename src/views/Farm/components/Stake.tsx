@@ -17,6 +17,7 @@ import useStake from '../../../hooks/useStake'
 import useStakedBalance from '../../../hooks/useStakedBalance'
 import useTokenBalance from '../../../hooks/useTokenBalance'
 import useUnstake from '../../../hooks/useUnstake'
+import useExit from '../../../hooks/useExit'
 import { getBalanceNumber } from '../../../utils/formatBalance'
 import DepositModal from './DepositModal'
 import DepositModalWithRef from './DepositModalWithRef'
@@ -45,6 +46,7 @@ const Stake: React.FC<StakeProps> = ({ lpContract, pid, tokenName, isWBNB }) => 
 
   const { onStake, onStakeWithRef } = useStake(pid)
   const { onUnstake } = useUnstake(pid)
+  const { onExit } = useExit(pid)  
 
   const [onPresentDeposit] = useModal(
     <DepositModal
@@ -128,6 +130,11 @@ const Stake: React.FC<StakeProps> = ({ lpContract, pid, tokenName, isWBNB }) => 
                   text="Unstake"
                   onClick={onPresentWithdraw}
                 />
+                <Button
+                  disabled={stakedBalance.eq(new BigNumber(0))}
+                  text="Exit"
+                  onClick={onExit}
+                />                
                 <StyledActionSpacer />
                 <GetStakeType />
               </>
