@@ -16,9 +16,9 @@ import theme from './theme'
 import Farms from './views/Farms'
 import Home from './views/Home'
 // import Stake from './views/Stake'
-import Shop from './views/Shop'
-import NFTs from './views/NFTs'
-import Referral from './views/Referral'
+//import Shop from './views/Shop'
+//import NFTs from './views/NFTs'
+//import Referral from './views/Referral'
 
 const App: React.FC = () => {
   const [mobileMenu, setMobileMenu] = useState(false)
