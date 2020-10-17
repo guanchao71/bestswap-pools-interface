@@ -19,7 +19,7 @@ export const Pools = [
     },
     {
         poolAddresses: {
-            1: '0x101C96b59A5d26895BE12b2f13bC354fe01af246',
+            1: '0x7E0dD95DcA02893321Efe3e09c261657f12bF269',
         },
         stakingTokenAddresses: {
             1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
@@ -49,7 +49,7 @@ export const Pools = [
         symbol: 'USDC',
         tokenSymbol: 'USDC',
         isWBNB: false,
-        icon: 'usdc',
+        icon: 'usdt',
         nftSymbol: 'TEST',
         magnification: 1,
     }    
