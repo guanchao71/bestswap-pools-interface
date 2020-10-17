@@ -18,6 +18,7 @@ const useStake = (pid: number) => {
   }, [ethereum, farm])
 
   const handleStake = useCallback(
+    console.log('handle stake')
     async (amount: string) => {
       const value = new BigNumber(amount).times(new BigNumber(10).pow(18)).toString()
 
@@ -35,6 +36,7 @@ const useStake = (pid: number) => {
   )
 
   const handleStakeWithRef = useCallback(
+    console.log('handle stake ref')
     async (amount: string, addr: string) => {
       console.log('amount', amount)
       console.log('amount', addr)
