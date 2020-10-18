@@ -49,7 +49,7 @@ export const Pools = [
         symbol: 'USDC',
         tokenSymbol: 'USDC',
         isWBNB: false,
-        icon: 'usdt',
+        icon: 'usdc',
         nftSymbol: 'TEST',
         magnification: 1,
     }    
