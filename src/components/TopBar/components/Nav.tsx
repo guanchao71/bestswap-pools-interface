@@ -5,23 +5,11 @@ import styled from 'styled-components'
 const Nav: React.FC = () => {
   return (
     <StyledNav>
-      <StyledLink exact activeClassName="active" to="/">
-        Home
-      </StyledLink>
       <StyledLink exact activeClassName="active" to="/farms">
         Menu
       </StyledLink>
-      <StyledLink exact activeClassName="active" to="/referral">
-        Referral
-      </StyledLink>
-      <StyledLink exact activeClassName="active" to="/shop">
-        Shop
-      </StyledLink>
-      <StyledLink exact activeClassName="active" to="/nfts">
-        NFTs
-      </StyledLink>
       <StyledAbsoluteLink
-        href="https://medium.com/sushiswap/the-sushiswap-project-c4049ea9941e"
+        href="https://medium.com/@EarnDefiCoin"
         target="_blank"
       >
         About
